@@ -1,0 +1,14 @@
+.dimensao {
+    width: 600px;
+    border: 1px solid blue;
+}
+
+.dimensao { border-radius: 50%;
+
+}
+
+.hero-image {
+    background: url(img_man.jpg) no-repeat center;
+    background-size: cover;
+    height: 500px;
+    position: relative;  }
