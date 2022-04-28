@@ -1,0 +1,35 @@
+body {
+    background-color: #c0c0c0;
+}
+
+#button1 {
+    background-color: #1095ca;
+    color: rgb(45, 45, 95);
+    /* padding: 10px; */
+    /* quando você coloca apenas 1 valor de padding ele replica
+    aos quatro cantos (isso vale também pra margin) */
+    /* padding: 15px 5px; */
+    /* quando você coloca dois valores o código compreende como
+    sendo o primeiro para cima/baixo e o segundo pra 
+    esquerda/direita */
+    /* padding: 10px 15px 20px 25px; */
+    /* quando você coloca os 4 ele segue a ordem do sentido
+    horário! cima, direita, baixo e esquerda */
+    padding-left: 40px;
+}
+#button2 {
+    background-color: #ff0000;
+    color: blanchedalmond;
+    font-size: xx-large;
+    width: 200px;
+    height: 200px;
+}
+
+#button3 {
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur( 10px);
+    -webkit-backdrop-filter: blur( 10px);
+}
+#BUTTON5 {
+    background-color: aqua;
+}

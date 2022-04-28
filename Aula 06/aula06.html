@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link 
+    rel="stylesheet" 
+    href="./style/estilo.css">
+
+    <title>Aula 06</title>
+</head>
+<body>
+
+<h2>Meu primeiro JavaScript</h2>
+
+<button 
+    id="button1"
+    type="button"
+    onclick="document.getElementById('demo')
+            .innerHTML = Date()">
+
+    Clique aqui para ver a data e a hora.</button>
+<br>
+<p id="demo">Olá  jovem.</p>
+
+<button 
+    id="button2"
+    type="button" 
+    onclick="document.getElementById('Span')
+            .innerHTML = 'Vai Corinthians' "> 
+
+    Botão dois </button>
+    <span id="Span" ></span>
+    <br>
+    <br>
+
+<button
+    id="button3"
+    type="button"
+    onclick="document.getElementById('Botão')
+            .innerHTML = 'Você jamais esquecerá das coisas que você lembra.'"> 
+            
+    Frases poéticas</button>
+<p id="Botão">Se não puder ajudar, atrapalhe, o importante é participar.</p>
+
+
+</body>
+
+<style>
+    #container {
+      width: 400px;
+      height: 400px;
+      position:relative;
+      background: rgb(126, 2, 243);
+    }
+    #animate {
+      width: 350px;
+      height: 350px;
+      position: absolute;
+      background-color: rgb(5, 5, 48);
+    }
+    </style>
+    <body>
+    
+    <p><button ID="BUTTON5"onclick="myMove()">CLICA AI PAI, É NOIX</button></p> 
+      
+    
+    <div id ="container">
+      <div id ="animate"></div>
+    </div>
+    
+    <script>
+    function myMove() {
+      let id = null;
+      const elem = document.getElementById("animate");   
+      let pos = 0;
+      clearInterval(id);
+      id = setInterval(frame, 4);
+      function frame() {
+        if (pos == 450) {
+          clearInterval(id);
+        } else {
+          pos++; 
+          elem.style.top = pos + "px"; 
+          elem.style.left = pos + "px"; 
+        }
+      }
+    }
+    </script>
+    
+    </body>
+    </html>
+    
+</html> 
