@@ -1,0 +1,44 @@
+<html>
+<head>
+<style>
+.flex-container {
+  display: flex;
+  background-color: rgb(6, 206, 82);
+  flex-direction: row-reverse;             /*          VEJA ABAIXO SOBRE O FLEX-DIRECTION */
+}
+
+.flex-container > div {                  /* NO FLEX CONTEINER, VÃO SER UTILIZADOS AS SEGUINTES FLEX-BOX na "flex-direction:":
+                                           *FLEX WRAP -  ele se adapta com a janela, ele vai fazer com que sua div seja flexivel com o que tiver dentro dela.
+                                        * column-reverse/ row-reverse - ele vai reverter a coluna / linha      
+                                           *display flex - tornar tudo oq esta sendo mostrado, ser manipulado na tela, ele é solto, ele não é fixo.
+                                           *flex direction - ele define a posição que os itens vão aparecer    */       
+  background-color: #015ee9;
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+   
+}
+</style>
+</head>
+<body>
+
+<h1>Crie um Flex Container</h1>
+
+<div class="flex-container">
+  <div>1</div>
+  <div>2</div>
+  <div>3</div>  
+  <div>4</div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+</div>
+
+<p>A Flexible Layout must have a parent element with the <em>display</em> property set to <em>flex</em>.</p>
+
+<p>Direct child elements(s) of the flexible container automatically becomes flexible items.</p>
+
+</body>
+</html>
